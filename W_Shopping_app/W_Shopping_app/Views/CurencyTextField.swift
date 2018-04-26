@@ -7,35 +7,49 @@
 //
 
 import UIKit
-
+@IBDesignable
 class CurencyTextField: UITextField {
-
+    
     
     override func awakeFromNib() {
-       super.awakeFromNib()
-        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2528058979)
+        super.awakeFromNib()
+        customizingFunc()
+        
+    }
+    override  func prepareForInterfaceBuilder()
+    {
+        customizingFunc()
+    }
+    
+    func customizingFunc()
+    {
+        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.4987896127)
         layer.cornerRadius = 5.0
-//       textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
         placeholder = "Salam"
         textAlignment = .center
         if let p = placeholder
         {
-
-        p
-            var attributed =  NSAttributedString(string: p, attributes: [.foregroundColor  : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) ])
+            
+            
+            let attributed =  NSAttributedString(string: p, attributes: [.foregroundColor  : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) ])
             attributedPlaceholder = attributed
             
-         textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
+            textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            
+            keyboardType = .decimalPad
+            //because always we have place holder so we always white or code ,don't be worri about it
+            
+            
         }
-        
     }
+    //@ibdesign has a function that i think it's prepar
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }

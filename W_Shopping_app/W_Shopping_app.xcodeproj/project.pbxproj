@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB960B1C2091E86000FF8D96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960B1B2091E86000FF8D96 /* AppDelegate.swift */; };
-		EB960B1E2091E86000FF8D96 /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960B1D2091E86000FF8D96 /* MainVc.swift */; };
+		EB960B1E2091E86000FF8D96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960B1D2091E86000FF8D96 /* ViewController.swift */; };
 		EB960B212091E86000FF8D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB960B1F2091E86000FF8D96 /* Main.storyboard */; };
 		EB960B232091E86000FF8D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB960B222091E86000FF8D96 /* Assets.xcassets */; };
 		EB960B262091E86000FF8D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB960B242091E86000FF8D96 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		EB960B182091E86000FF8D96 /* W_Shopping_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W_Shopping_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB960B1B2091E86000FF8D96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB960B1D2091E86000FF8D96 /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
+		EB960B1D2091E86000FF8D96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB960B202091E86000FF8D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB960B222091E86000FF8D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB960B252091E86000FF8D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		EB960B2D2091E95100FF8D96 /* VC's */ = {
 			isa = PBXGroup;
 			children = (
-				EB960B1D2091E86000FF8D96 /* MainVc.swift */,
+				EB960B1D2091E86000FF8D96 /* ViewController.swift */,
 			);
 			path = "VC's";
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB960B1E2091E86000FF8D96 /* MainVc.swift in Sources */,
+				EB960B1E2091E86000FF8D96 /* ViewController.swift in Sources */,
 				EB960B312091EB0C00FF8D96 /* CurencyTextField.swift in Sources */,
 				EB960B1C2091E86000FF8D96 /* AppDelegate.swift in Sources */,
 			);
