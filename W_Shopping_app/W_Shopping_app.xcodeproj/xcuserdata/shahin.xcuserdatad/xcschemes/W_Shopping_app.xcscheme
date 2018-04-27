@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EBB9D4C320924C7900DE897D"
+               BuildableName = "W_Shopping_appTests.xctest"
+               BlueprintName = "W_Shopping_appTests"
+               ReferencedContainer = "container:W_Shopping_app.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

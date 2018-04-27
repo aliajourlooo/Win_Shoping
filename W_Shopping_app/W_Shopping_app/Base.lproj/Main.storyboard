@@ -30,20 +30,48 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1tX-8A-Kkp">
                                 <rect key="frame" x="20" y="206" width="335" height="85"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBs-xm-ube" customClass="CurencyTextField" customModule="W_Shopping_app" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBs-xm-ube" customClass="CurencyTextField" customModule="W_Shopping_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adK-Ob-Doc">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adK-Ob-Doc" customClass="CurencyTextField" customModule="W_Shopping_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="335" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH4-U8-PtY">
+                                <rect key="frame" x="20" y="326" width="335.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jhA-Zp-sJA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.96527414869999995" green="1" blue="0.98070615530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vN-dB-y6K">
+                                <rect key="frame" x="141" y="412" width="95" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96527414869999995" green="1" blue="0.98070615530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhU-mD-f6d">
+                                <rect key="frame" x="20" y="602" width="335.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Egf-mn-cGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="0.96527414869999995" green="1" blue="0.98070615530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUH-9G-ZpJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,22 +79,35 @@
                             <constraint firstItem="1tX-8A-Kkp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2G9-Pe-A5x"/>
                             <constraint firstItem="I9P-LZ-wzH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3y0-rw-tlh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I9P-LZ-wzH" secondAttribute="bottom" id="5Cp-cp-faG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5vN-dB-y6K" secondAttribute="trailing" constant="139" id="715-4L-KFc"/>
+                            <constraint firstItem="wH4-U8-PtY" firstAttribute="top" secondItem="1tX-8A-Kkp" secondAttribute="bottom" constant="35" id="FWW-jP-U9B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1tX-8A-Kkp" secondAttribute="trailing" constant="20" id="Ju2-2a-YqI"/>
                             <constraint firstItem="egc-dy-mqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NTI-tx-M6F"/>
+                            <constraint firstItem="5vN-dB-y6K" firstAttribute="top" secondItem="wH4-U8-PtY" secondAttribute="bottom" constant="26" id="QJV-tG-LOg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IhU-mD-f6d" secondAttribute="bottom" constant="20" id="SBT-z8-uND"/>
+                            <constraint firstItem="5vN-dB-y6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="YYp-3i-1Ng"/>
+                            <constraint firstItem="wH4-U8-PtY" firstAttribute="leading" secondItem="adK-Ob-Doc" secondAttribute="leading" id="fOw-vI-xgx"/>
+                            <constraint firstItem="wH4-U8-PtY" firstAttribute="trailing" secondItem="adK-Ob-Doc" secondAttribute="trailing" id="mWf-Jo-ptl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egc-dy-mqt" secondAttribute="trailing" constant="113" id="mXR-Z0-194"/>
                             <constraint firstItem="egc-dy-mqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="pgv-7C-jbo"/>
+                            <constraint firstItem="wH4-U8-PtY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qil-wj-hAO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I9P-LZ-wzH" secondAttribute="trailing" id="sLV-kn-zYQ"/>
                             <constraint firstItem="1tX-8A-Kkp" firstAttribute="top" secondItem="egc-dy-mqt" secondAttribute="bottom" constant="75" id="thp-cS-HNG"/>
+                            <constraint firstItem="IhU-mD-f6d" firstAttribute="leading" secondItem="wH4-U8-PtY" secondAttribute="leading" id="tu7-Df-oRx"/>
+                            <constraint firstItem="IhU-mD-f6d" firstAttribute="trailing" secondItem="wH4-U8-PtY" secondAttribute="trailing" id="z3G-WD-sLz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="NumberOfHours" destination="wH4-U8-PtY" id="HoW-Zn-4Ah"/>
+                        <outlet property="hoursLbl" destination="5vN-dB-y6K" id="M8V-hp-QRc"/>
+                        <outlet property="priceTxt" destination="adK-Ob-Doc" id="34k-0S-r6C"/>
                         <outlet property="wageTxt" destination="mBs-xm-ube" id="ZUh-V3-EtS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+            <point key="canvasLocation" x="-62" y="67"/>
         </scene>
     </scenes>
     <resources>
